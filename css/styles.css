@@ -1,0 +1,43 @@
+.btn-success {
+    background-color: aquamarine;
+}
+
+/* xs - Extra Small -<576px */
+.breakpoints {
+    color: brown;
+}
+
+/* sm - Small ≥576px */
+@media(min-width: 576px) {
+    .breakpoints {
+        color: purple;
+    }
+}
+
+/* sm - Medium ≥768px */
+@media(min-width: 768px) {
+    .breakpoints {
+        color: yellow;
+    }
+}
+
+/* sm - Large ≥992px */
+@media(min-width: 992px) {
+    .breakpoints {
+        color: red;
+    }
+}
+
+/* sm - Extra Large ≥1200px */
+@media(min-width: 1200px) {
+    .breakpoints {
+        color: cadetblue;
+    }
+}
+
+/* xxl - Extra Extra Large ≥1400px */
+@media(min-width: 1400px) {
+    .breakpoints {
+        color: black;
+    }
+}
