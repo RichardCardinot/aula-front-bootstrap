@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  
+    <!-- Java Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" defer></script>
+    
+    <link rel="stylesheet" href="./css/forms.css">
+    
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Formulários</h1>
+
+    <!-- Exemplo clássico -->
+    <form action="cadastro.php" method="POST">
+        <!-- Cria o nome do campo de iput e relaciona ao nome do input "for=" -->
+        <label for="nome">Nome</label>
+        <!-- O name definido neste input é usado no "label" de cima -->
+        <!-- O "Insira seu nome" coloca uma sugestão no campo de input -->
+        <input type="text" name="nome" id="nome" placeholder="Insira seu nome">
+        
+        <br />  <!-- Pula linha  -->
+        <br />  <!-- Pula linha  -->
+
+        <!-- Cria o nome do campo de iput e relaciona ao nome do input "for=" -->
+        <label for="nascimento">Data de Nascimento</label>
+        <!-- O name definido neste input é usado no "label" de cima -->
+        <input type="date" name="nascimento" id="nascimento">
+
+        <br />  <!-- Pula linha  -->
+        <br />  <!-- Pula linha  -->
+
+        <!-- Cria o nome do campo de iput e relaciona ao nome do input "for=" -->
+        <label for="receberemail">Receber E-mail?</label>
+        <!-- O name definido neste input é usado no "label" de cima -->
+        <input type="checkbox" name="receberemail" id="receberemail">
+
+        <br />  <!-- Pula linha  -->
+        <br />  <!-- Pula linha  -->
+
+        <!-- Cria o nome do campo de iput e relaciona ao nome do input "for=" -->
+        <label for="email">Email:</label>
+        <!-- O name definido neste input é usado no "label" de cima -->
+        <!-- O "Insira seu nome" coloca uma sugestão no campo de input -->
+        <input type="email" name="email" id="email" placeholder="Insira seu nome">
+
+        <br />  <!-- Pula linha  -->
+        <br />  <!-- Pula linha  -->
+
+        <!-- Cria o nome do campo de iput e relaciona ao nome do input "for=" -->
+        <label for="senha">Senha:</label>
+        <!-- O name definido neste input é usado no "label" de cima -->
+        <!-- O "Insira seu nome" coloca uma sugestão no campo de input -->
+        <input type="password" name="senha" id="senha" placeholder="Insira seu nome">
+
+        <br />  <!-- Pula linha  -->
+        <br />  <!-- Pula linha  -->
+
+        <!-- Cria o nome do campo de iput e relaciona ao nome do input "for=" -->
+        <label for="sexo">Sexo:</label>
+        <br />  <!-- Pula linha  -->
+        <!-- O name definido neste input é usado no "label" de cima (for="sexo") -->
+        <input type="radio" name="sexo" id="sexo" value="masculino"> Masculino
+        <br />  <!-- Pula linha  -->
+        <!-- O name definido neste input é usado no "label" de cima (for="sexo") -->
+        <input type="radio" name="sexo" id="sexo" value="feminino"> Feminino
+        <br />  <!-- Pula linha  -->
+        <!-- O name definido neste input é usado no "label" de cima (for="sexo") -->
+        <input type="radio" name="sexo" id="sexo" value="outro"> Outro
+
+        <br />  <!-- Pula linha  -->
+        <br />  <!-- Pula linha  -->
+
+        <!-- Envia os dados para o "action=" inlcuíno na abertura da tag "form" -->
+        <input type="submit" value="ENVIAR">
+    </form>
+
+    <br />  <!-- Pula linha  -->
+    <br />  <!-- Pula linha  -->
+    <br />  <!-- Pula linha  -->
+    <br />  <!-- Pula linha  -->
+    <br />  <!-- Pula linha  -->
+
+    <!-- Usando 4 das 12 colunas, limitando assim a área do formulário -->
+    <!-- "ms-4" da uma margem left de tamanho 4 -->
+    <div class="col-4 ms-4">
+        <h2>FORMULÁRIO BOOSTRAP</h2>
+        <form>
+            <!-- "mb-4" dá uma margem botton de tamanho 4 -->
+            <div class="mb-4">
+                <label for="email" class="form-label">Email:</label>
+                <!-- O "required" obriga que o campo seja preenchico para ser dado o "submit"-->
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="mb-4">
+                <label for="senha" class="form-label">Senha:</label>
+                <!-- O "required" obriga que o campo seja preenchico para ser dado o "submit"-->
+                <input type="password" class="form-control" id="senha" name="senha" required>
+            </div>
+
+            <button type="submit" class="btn btn-success">Entrar</button>
+        </form>
+    </div>
+    
+</body>
+</html>
