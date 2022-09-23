@@ -1,0 +1,25 @@
+.col, .col-12, .col-9, .col-4, .col-3 {
+    border: 2px solid purple;
+}
+
+.grid-container {
+    margin-top: 50px;
+    border: 2px solid black;
+    color: white;
+}
+
+.grid-row-superior {
+    height: 100px;
+    background-color: gray;
+    margin-bottom: 30px;
+}
+
+.grid-row-meio {
+    height: 500px;
+    background-color: green;
+}
+
+.grid-row-inferior {
+    height: 150px;
+    background-color: blue;
+}
